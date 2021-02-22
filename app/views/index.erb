@@ -1,0 +1,10 @@
+<h1> Weclome to Index Recipes</h1>
+
+<%@recipes.each do |recipe|%>
+<br>
+<a href="/recipes/<%= recipes.id %>">Recipe Page</a>
+<label>Recipe Name: <%= recipe.name%></label>
+<label>Recipe Ingredients: <%= recipe.ingredients%></label>
+<label>Cook Time: <%= recipe.cook_time%></label>
+<% end %>
+
